@@ -1,84 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-		<title>Weekly Checklist</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-	<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My weekly checklist for school, personal habits, and work.">
+    <meta name="author" content="Brianna Moody">
+    <title>Weekly Checklist</title>
 
-	<header> 
-    <h1>Weekly Checklist</h1>
+   <!-- Bootstrap v5.3.8 -->
+   <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <!-- END LOADING BOOTSTRAP CSS -->
+    
+   <!-- Custom styles - add your own CSS to this stylesheet -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+  <!-- Bootstrap component 1: Navbar -->
+    <nav class="navbar navbar-expand-lg checklist-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Weekly Checklist</a>
+            <a class="btn btn-outline-dark" href="#schedule">My Schedule</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="checklist-header text-center py-5">
+        <div class="container">
+            <h1>Weekly Checklist</h1>
+            <p>Build good habits, one week at a time.</p>
+        </div>
     </header>
 
-    <img src="Girl-Running-Habits.jpg" alt="Girl running on track with blue set"
-<p><strong>Weekly Checklist</strong><br>
-September 20 - September 26<br>
-Brianna Moody<br> 
-</p>
+    <main class="container my-4">
 
-<h2>Objective</h2>
-<p>This checklist is to hold myself accountable and display all of my tasks and assignments for the week. It will consist of my school work, personal habits, and work schedule. </p>
+        <!-- Bootstrap grid: container, row, and columns -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="Girl-Running-Habits.jpg"
+                     alt="Girl running on a track in a blue set"
+                     class="profile-image">
 
-<h2>To-Do  </h2>
+                <p>
+                    <strong>Weekly Checklist</strong><br>
+                    September 20 - September 26<br>
+                    Brianna Moody
+                </p>
+            </div>
+        </div>
 
-<h3> Daily Personal Habits </h3>
-  <input type="checkbox" name="habits" value="Clean"> Make bed <br>
-  <input type="checkbox" name="habits" value="clean"> Laundry  <br>
-   <input type="checkbox" name="habits" value="Clean"> Keep room clean<br>
-  <input type="checkbox" name="habits" value="clean"> Keep bathroom clean  <br>
-   <input type="checkbox" name="habits" value="Walk"> Walk every day<br>
-  <input type="checkbox" name="habits" value="water"> Drink 3 Stanleys a day  <br>
-  <input type="checkbox" name="habits" value="pilates"> Sign up for Pilates <br>
-  <a href="https://www.wellnessliving.com/rs/schedule/yogasolva?k_business=133671&id_class_tab=1" target="_blank">Sign up for Pilates</a>
+        <!-- Bootstrap component 2: Alert -->
+        <div class="alert checklist-alert" role="note">
+            <h2>Objective</h2>
+            <p>
+                This checklist is to hold myself accountable and display
+                all of my tasks and assignments for the week. It will
+                consist of my school work, personal habits, and work schedule.
+            </p>
+        </div>
 
-<H2> Week at a Glance </H2>
-<h3> Sunday 9/20 </h3>
-  <input type="checkbox" name="habits" value="Work"> Work 12:00-5:00 <br>
+        <!-- Bootstrap grid: two responsive columns -->
+        <div class="row g-4">
 
-<h3> Monday 9/21 </h3>
-  <input type="checkbox" name="habits" value="class"> Class 9:35-10:50 <br>
-  <input type="checkbox" name="habits" value="class"> Class 1:50-4:40 <br>
-  <input type="checkbox" name="habits" value="pilates"> Pilates 4:00-5:00 <br>
+            <!-- Bootstrap component 3: Card -->
+            <div class="col-12 col-lg-6">
+                <section class="card checklist-card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Daily Personal Habits</h2>
 
-  <h3> Tuesday 9/22 </h3>
-  <input type="checkbox" name="habits" value="class"> Class 11:10-12:25 <br>
-  <input type="checkbox" name="habits" value="class"> Class 12:45-2 <br>
-  <input type="checkbox" name="habits" value="pilates"> Pilates 7:30-8:30 <br>
+                        <!-- Bootstrap component 4: List group -->
+                        <div class="list-group list-group-flush">
 
-  <h3> Wednesday 9/23 </h3>
-  <input type="checkbox" name="habits" value="class"> Class 9:35-10:50 <br>
-  <input type="checkbox" name="habits" value="pilates"> Pilates 12:00-1:00 <br>
-  <input type="checkbox" name="habits" value="class"> Class 1:50-4:40 <br>
-  
-  <h3> Thursday 9/24 </h3>
-  <input type="checkbox" name="habits" value="pilates"> Pilates 6:00-7:00 <br>
-  <input type="checkbox" name="habits" value="class"> Class 11:10-12:25 <br>
-  <input type="checkbox" name="habits" value="class"> Class 12:45-2 <br>
-  <input type="checkbox" name="habits" value="work"> Work 5:00-10:00 <br>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-2" type="checkbox">
+                                Make bed
+                            </label>
 
-<h3> Friday 9/25 </h3>
-  <input type="checkbox" name="habits" value="Work"> Work 8:30-1:00 <br>
-  <input type="checkbox" name="habits" value="pilates"> Pilates 3:00-4:00 <br>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-2" type="checkbox">
+                                Laundry
+                            </label>
 
-  <h3> Saturday 9/26 </h3>
-  <input type="checkbox" name="habits" value="Recruitment"> Recruitment 7:30-1:00 <br>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-2" type="checkbox">
+                                Keep room clean
+                            </label>
 
-<h3>Additional Tasks</h3>
-<textarea name="instructions" >Journal entries, Homework, Tasks... etc.</textarea>
-<p>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-2" type="checkbox">
+                                Keep bathroom clean
+                            </label>
 
-<input type="submit" value="Weekly Tasks Complete">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-2" type="checkbox">
+                                Walk every day
+                            </label>
 
-</body>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-2" type="checkbox">
+                                Drink 3 Stanleys a day
+                            </label>
+
+                            <label class="list-group-item">
+                                <input class="form-check-input me-2" type="checkbox">
+                                Sign up for Pilates
+                            </label>
+
+                        </div>
+
+                        <!-- Bootstrap component 5: Button -->
+                        <a class="btn btn-outline-dark mt-3"
+                           href="https://www.wellnessliving.com/rs/schedule/yogasolva?k_business=133671&amp;id_class_tab=1"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Sign up for Pilates
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Weekly schedule -->
+            <div class="col-12 col-lg-6" id="schedule">
+                <section class="card checklist-card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Week at a Glance</h2>
+
+                        <h3>Sunday 9/20</h3>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Work 12:00-5:00</label>
+
+                        <h3>Monday 9/21</h3>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Class 9:35-10:50</label>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Class 1:50-4:40</label>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Pilates 4:00-5:00</label>
+
+                        <h3>Tuesday 9/22</h3>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Class 11:10-12:25</label>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Class 12:45-2:00</label>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Pilates 7:30-8:30</label>
+
+                        <h3>Wednesday 9/23</h3>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Class 9:35-10:50</label>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Pilates 12:00-1:00</label>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Class 1:50-4:40</label>
+
+                        <h3>Thursday 9/24</h3>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Pilates 6:00-7:00</label>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Class 11:10-12:25</label>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Class 12:45-2:00</label>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Work 5:00-10:00</label>
+
+                        <h3>Friday 9/25</h3>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Work 8:30-1:00</label>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Pilates 3:00-4:00</label>
+
+                        <h3>Saturday 9/26</h3>
+                        <label class="schedule-item"><input class="form-check-input me-2" type="checkbox"> Recruitment 7:30-1:00</label>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Additional tasks -->
+            <div class="col-12">
+                <section class="card checklist-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Additional Tasks</h2>
+
+                        <label for="instructions" class="form-label">
+                            Extra tasks and reminders
+                        </label>
+
+                        <textarea class="form-control"
+                                  id="instructions"
+                                  name="instructions"
+                                  rows="4"
+                                  placeholder="Journal entries, homework, tasks, etc."></textarea>
+
+                        <button type="button" class="btn btn-success mt-3"
+                                onclick="this.textContent='Tasks Reviewed!'">
+                            Weekly Tasks Complete
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="text-center py-4">
+        <p>Weekly Checklist &copy; 2026</p>
+    </footer>
+
+<!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+      
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-

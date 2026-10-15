@@ -1,103 +1,144 @@
+/* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
 @charset "UTF-8";
 
-/*whole page*/
+/* Whole page */
+html {
+    background-color: #718477;
+}
 
-html { 
-background-color:#718477 }
 body {
-	background-color: #718477;
-	font-family: Georgia, serif;
-	color: #5c5148;
-	margin: 0;
-padding: 30px;
+    background-color: #718477;
+    font-family: Georgia, serif;
+    color: #5c5148;
+    margin: 0;
 }
 
-header {
-	background-image: url("lace.png");
-	background-size: cover;
-	background-position: center;
-	height: 180px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: -30px -30px 30px -30px;
-	text-align: center;
-	font-family: Georgia, serif;
-	color: #718477;
-	font-size: 36px;
-	font-weight: normal;
+/* Navigation */
+.checklist-navbar {
+    background-color: #dce5da;
 }
 
+.checklist-navbar .navbar-brand {
+    color: #5c5148;
+}
+
+/* Header */
+.checklist-header {
+    background-image: url("lace.png");
+    background-size: cover;
+    background-position: center;
+    color: #718477;
+}
+
+.checklist-header h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.checklist-header p {
+    color: #5c5148;
+}
+
+/* Headings */
 h2 {
-	font-family: Georgia, serif;
-	color: #f1f5e7;
-	border-bottom: 2px solid #b8cfc3;
-	padding-bottom: 8px;
-	font-weight: normal;
+    font-family: Georgia, serif;
+    color: #f1f5e7;
+    border-bottom: 2px solid #b8cfc3;
+    padding-bottom: 8px;
+    font-weight: normal;
 }
 
-h3 { 
-font-family: Georgia, serif;
-	color: #f1f5e7;
-	font-weight: normal	;
-	font-size: 20px;
- }
-
- p {
- 	text-align: center;
- 	line-height: 1.6;
- 	color: #f1f5e7;
-
- }
-
- a {
-    display: inline-block;
-    background-color: #5c5148;
-    color: #fffdf9;
-    padding: 10px 18px;
-    border-radius: 20px;
-    text-decoration: none;
-    margin-top: 5px;
+h3 {
+    font-family: Georgia, serif;
+    color: #f1f5e7;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
-a:hover {
-    background-color: #5c5148;
+/* Paragraphs */
+main p {
+    text-align: center;
+    line-height: 1.6;
+    color: #f1f5e7;
 }
 
- img {
- 	  display: block;
+/* Running photo */
+.profile-image {
+    display: block;
     width: 180px;
     height: 180px;
     object-fit: cover;
     margin: 25px auto;
     border-radius: 50%;
     border: 4px solid #d8cfc3;
+}
 
- }
+/* Objective alert */
+.checklist-alert {
+    background-color: #5c5148;
+    border: 1px solid #b8cfc3;
+    color: #f1f5e7;
+}
 
- input[type="checkbox"] {
- 	margin-right: 8px;
- 	margin-bottom: 10px;
- 	color: #f1f5e7;
+.checklist-alert p {
+    margin-bottom: 0;
+}
 
- }
+/* Checklist cards */
+.checklist-card {
+    background-color: #718477;
+    border: 1px solid #b8cfc3;
+    border-radius: 12px;
+}
 
- textarea {
- 	width: 90%;
- 	height: 120px;
- 	padding: 12px;
- 	border: 2px solid #b8cfc3;
- 	border-radius: 12px;
- 	font-family: Arial, sans-serif;
- 	font-size: 14px;
- }
+.checklist-card .card-title {
+    margin-bottom: 20px;
+}
 
- input[type="submit"] {
- 	background-color: #557568 ;
- 	color: white;
- 	border: none;
- 	padding: 12px 20px;
- 	border-radius: 20px;
- 	font-size: 16px;
- 	cursor: pointer;
- }
+/* Personal habit list */
+.list-group-item {
+    background-color: #f1f5e7;
+    color: #5c5148;
+    border-color: #b8cfc3;
+}
+
+/* Schedule checkboxes */
+.schedule-item {
+    display: block;
+    color: #f1f5e7;
+    margin-bottom: 10px;
+}
+
+.form-check-input {
+    accent-color: #557568;
+}
+
+/* Buttons */
+.btn-outline-dark {
+    color: #5c5148;
+    border-color: #5c5148;
+}
+
+.btn-outline-dark:hover {
+    background-color: #5c5148;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #557568;
+    border-color: #557568;
+}
+
+/* Additional tasks */
+.form-control {
+    font-family: Arial, sans-serif;
+    border: 2px solid #b8cfc3;
+    border-radius: 12px;
+}
+
+/* Footer */
+footer p {
+    color: #f1f5e7;
+    margin: 0;
+}
